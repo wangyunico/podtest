@@ -17,6 +17,10 @@
 		1886E2E51C998F48004019F2 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E2E41C998F48004019F2 /* SecondVC.m */; };
 		1886E2E81C998F5C004019F2 /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E2E71C998F5C004019F2 /* ThirdVC.m */; };
 		1886E2EB1C999689004019F2 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1886E2EA1C999689004019F2 /* Entity.m */; };
+		881F06651C9A378000301A5E /* TokenTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F06641C9A378000301A5E /* TokenTestView.m */; };
+		881F06681C9A378A00301A5E /* TokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 881F06671C9A378A00301A5E /* TokenView.m */; };
+		881F066A1C9A3DF400301A5E /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881F06691C9A3DF400301A5E /* Reveal.framework */; };
+		881F066C1C9A3E1500301A5E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 881F066B1C9A3E1500301A5E /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,12 @@
 		1886E2EA1C999689004019F2 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		45340B20C953EB55D7EF5B56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		788A8E4E6F79FD6A31CCCE1B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		881F06631C9A378000301A5E /* TokenTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenTestView.h; sourceTree = "<group>"; };
+		881F06641C9A378000301A5E /* TokenTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenTestView.m; sourceTree = "<group>"; };
+		881F06661C9A378A00301A5E /* TokenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenView.h; sourceTree = "<group>"; };
+		881F06671C9A378A00301A5E /* TokenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenView.m; sourceTree = "<group>"; };
+		881F06691C9A3DF400301A5E /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		881F066B1C9A3E1500301A5E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F6D42EC2945D4D7365A190BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881F066C1C9A3E1500301A5E /* libz.tbd in Frameworks */,
 				166B1726791C04BE21A80625 /* libPods.a in Frameworks */,
+				881F066A1C9A3DF400301A5E /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,7 @@
 		1886E2C01C998A5C004019F2 = {
 			isa = PBXGroup;
 			children = (
+				881F06691C9A3DF400301A5E /* Reveal.framework */,
 				1886E2CB1C998A5C004019F2 /* PodDemo */,
 				1886E2CA1C998A5C004019F2 /* Products */,
 				BB40C9E6F961A7FDE81BD275 /* Pods */,
@@ -78,6 +91,10 @@
 				1886E2D01C998A5C004019F2 /* AppDelegate.m */,
 				1886E2D21C998A5C004019F2 /* ViewController.h */,
 				1886E2D31C998A5C004019F2 /* ViewController.m */,
+				881F06631C9A378000301A5E /* TokenTestView.h */,
+				881F06641C9A378000301A5E /* TokenTestView.m */,
+				881F06661C9A378A00301A5E /* TokenView.h */,
+				881F06671C9A378A00301A5E /* TokenView.m */,
 				1886E2D51C998A5C004019F2 /* Main.storyboard */,
 				1886E2D81C998A5C004019F2 /* Assets.xcassets */,
 				1886E2DA1C998A5C004019F2 /* LaunchScreen.storyboard */,
@@ -104,6 +121,7 @@
 		3B960B317AA39A969CE9B68C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				881F066B1C9A3E1500301A5E /* libz.tbd */,
 				788A8E4E6F79FD6A31CCCE1B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -239,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881F06651C9A378000301A5E /* TokenTestView.m in Sources */,
 				1886E2EB1C999689004019F2 /* Entity.m in Sources */,
+				881F06681C9A378A00301A5E /* TokenView.m in Sources */,
 				1886E2D41C998A5C004019F2 /* ViewController.m in Sources */,
 				1886E2D11C998A5C004019F2 /* AppDelegate.m in Sources */,
 				1886E2E81C998F5C004019F2 /* ThirdVC.m in Sources */,
@@ -355,6 +375,10 @@
 			baseConfigurationReference = F6D42EC2945D4D7365A190BB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PodDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyu.PodDemo;
@@ -367,6 +391,10 @@
 			baseConfigurationReference = 45340B20C953EB55D7EF5B56 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PodDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyu.PodDemo;
